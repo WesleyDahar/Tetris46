@@ -1,0 +1,182 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Section Cross References
+
+    pages.o(PAGES_Code) refers to start.o(Start) for Startup
+    pages.o(PAGES_Code) refers to pages.o(PAGES_Variables) for blockData
+    pages.o(PAGES_Code) refers to pages.o(PAGES_Constants) for GAMEOVER
+    pages.o(PAGES_Reset) refers to start.o(.ARM.__at_0x1FFFE000) for __initial_sp
+    pages.o(PAGES_Reset) refers to pages.o(PAGES_Code) for Reset_Handler
+    pages.o(PAGES_Reset) refers to start.o(Start) for Dummy_Handler
+    pages.o(PAGES_Reset) refers to hardfault_lcd.o(HardFaultLCD) for HardFault_Handler
+
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    PAGES_Reset                              0x00000000   Section      192  pages.o(PAGES_Reset)
+    HardFault_LCD.s                          0x00000000   Number         0  hardfault_lcd.o ABSOLUTE
+    PAGES.s                                  0x00000000   Number         0  pages.o ABSOLUTE
+    Start.s                                  0x00000000   Number         0  start.o ABSOLUTE
+    .ARM.__at_0xC0                           0x000000c0   Section       64  start.o(.ARM.__at_0xC0)
+    HardFaultLCD                             0x00000100   Section      408  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_Config                            0x0000018c   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_WF_FRONTPLANE_PINS                   0x00000208   Data           0  hardfault_lcd.o(HardFaultLCD)
+    LCD_DIGITS                               0x00000228   Data           0  hardfault_lcd.o(HardFaultLCD)
+    Start                                    0x00000298   Section      252  start.o(Start)
+    SystemInit                               0x000002a7   Thumb Code    54  start.o(Start)
+    SetClock48MHz                            0x000002dd   Thumb Code   140  start.o(Start)
+    .ARM.__at_0x400                          0x00000400   Section       16  start.o(.ARM.__at_0x400)
+    PAGES_Code                               0x00000410   Section     2872  pages.o(PAGES_Code)
+    Update                                   0x000005a5   Thumb Code   116  pages.o(PAGES_Code)
+    Place                                    0x00000665   Thumb Code   712  pages.o(PAGES_Code)
+    DrawBlock                                0x00000999   Thumb Code   294  pages.o(PAGES_Code)
+    GetNext                                  0x00000abf   Thumb Code    70  pages.o(PAGES_Code)
+    PutNext                                  0x00000b05   Thumb Code    60  pages.o(PAGES_Code)
+    DrawText                                 0x00000b41   Thumb Code    94  pages.o(PAGES_Code)
+    Reset                                    0x00000b9f   Thumb Code    98  pages.o(PAGES_Code)
+    InitQueue                                0x00000c7d   Thumb Code    22  pages.o(PAGES_Code)
+    Enqueue                                  0x00000c93   Thumb Code    42  pages.o(PAGES_Code)
+    Dequeue                                  0x00000cbd   Thumb Code    40  pages.o(PAGES_Code)
+    PutStringSB                              0x00000ce5   Thumb Code    20  pages.o(PAGES_Code)
+    CheckChar                                0x00000cf9   Thumb Code    14  pages.o(PAGES_Code)
+    GetChar                                  0x00000d07   Thumb Code    16  pages.o(PAGES_Code)
+    PutChar                                  0x00000d17   Thumb Code    22  pages.o(PAGES_Code)
+    PIT_ISR                                  0x00000d2d   Thumb Code    28  pages.o(PAGES_Code)
+    UART0_ISR                                0x00000d49   Thumb Code    56  pages.o(PAGES_Code)
+    Init_LEDs                                0x00000d81   Thumb Code    48  pages.o(PAGES_Code)
+    Init_PIT_IRQ                             0x00000db1   Thumb Code    64  pages.o(PAGES_Code)
+    Init_UART0_IRQ                           0x00000df1   Thumb Code   152  pages.o(PAGES_Code)
+    PAGES_Constants                          0x00000f48   Section     2440  pages.o(PAGES_Constants)
+    DRAW_NEXT                                0x00000f48   Data           0  pages.o(PAGES_Constants)
+    BLOCK                                    0x00001028   Data           0  pages.o(PAGES_Constants)
+    VARIABLE_BASE                            0x00001098   Data           0  pages.o(PAGES_Constants)
+    VTP                                      0x00001110   Data           8  pages.o(PAGES_Constants)
+    COLOR                                    0x0000111c   Data           7  pages.o(PAGES_Constants)
+    CLEAR_NEXT                               0x00001123   Data          31  pages.o(PAGES_Constants)
+    CLEAR_LINE                               0x00001142   Data          26  pages.o(PAGES_Constants)
+    CURSOR_SET                               0x0000115c   Data           9  pages.o(PAGES_Constants)
+    CURSOR_UP                                0x00001165   Data           4  pages.o(PAGES_Constants)
+    GAMEOVER                                 0x0000116d   Data           0  pages.o(PAGES_Constants)
+    BOARD                                    0x000011e2   Data           0  pages.o(PAGES_Constants)
+    .ARM.__at_0x1FFFE000                     0x1fffe000   Section      256  start.o(.ARM.__at_0x1FFFE000)
+    PAGES_Variables                          0x1fffe100   Section     2148  pages.o(PAGES_Variables)
+    RxQRecord                                0x1fffe100   Data          18  pages.o(PAGES_Variables)
+    RxQBuffer                                0x1fffe112   Data           1  pages.o(PAGES_Variables)
+    TxQRecord                                0x1fffe114   Data          18  pages.o(PAGES_Variables)
+    TxQBuffer                                0x1fffe126   Data         128  pages.o(PAGES_Variables)
+    counter                                  0x1fffe1a8   Data           4  pages.o(PAGES_Variables)
+    timer                                    0x1fffe1ac   Data           1  pages.o(PAGES_Variables)
+    board                                    0x1fffe1b0   Data         576  pages.o(PAGES_Variables)
+    seed                                     0x1fffe3f0   Data           8  pages.o(PAGES_Variables)
+    statistics                               0x1fffe3f8   Data          84  pages.o(PAGES_Variables)
+    lines                                    0x1fffe44c   Data          12  pages.o(PAGES_Variables)
+    level                                    0x1fffe458   Data          12  pages.o(PAGES_Variables)
+    score                                    0x1fffe464   Data          12  pages.o(PAGES_Variables)
+    top                                      0x1fffe470   Data          12  pages.o(PAGES_Variables)
+    blockData                                0x1fffe47c   Data           8  pages.o(PAGES_Variables)
+    indexBuffer                              0x1fffe484   Data          32  pages.o(PAGES_Variables)
+    sequenceBuffer                           0x1fffe4a4   Data         768  pages.o(PAGES_Variables)
+    clearBuffer                              0x1fffe7a4   Data         420  pages.o(PAGES_Variables)
+    lineBuffer                               0x1fffe948   Data          24  pages.o(PAGES_Variables)
+    nextBlock                                0x1fffe960   Data           1  pages.o(PAGES_Variables)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           0  pages.o(PAGES_Reset)
+    __Vectors_End                            0x000000c0   Data           0  pages.o(PAGES_Reset)
+    __Vectors_Size                           0x000000c0   Number         0  pages.o ABSOLUTE
+    HardFault_Handler                        0x00000101   Thumb Code    16  hardfault_lcd.o(HardFaultLCD)
+    InitLCD                                  0x00000111   Thumb Code   124  hardfault_lcd.o(HardFaultLCD)
+    LCD_PutHex                               0x000001cd   Thumb Code    44  hardfault_lcd.o(HardFaultLCD)
+    Startup                                  0x00000299   Thumb Code    14  start.o(Start)
+    Dummy_Handler                            0x00000369   Thumb Code     2  start.o(Start)
+    Reset_Handler                            0x00000411   Thumb Code   404  pages.o(PAGES_Code)
+    __initial_sp                             0x1fffe100   Data           0  start.o(.ARM.__at_0x1FFFE000)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00002234, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000018d0, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000c0   Data   RO            2    PAGES_Reset         pages.o
+    0x000000c0   0x000000c0   0x00000040   Data   RO           11    .ARM.__at_0xC0      start.o
+    0x00000100   0x00000100   0x00000198   Code   RO           19    HardFaultLCD        hardfault_lcd.o
+    0x00000298   0x00000298   0x000000fc   Code   RO           10    Start               start.o
+    0x00000394   0x00000394   0x0000006c   PAD
+    0x00000400   0x00000400   0x00000010   Code   RO           12    .ARM.__at_0x400     start.o
+    0x00000410   0x00000410   0x00000b38   Code   RO            1  * PAGES_Code          pages.o
+    0x00000f48   0x00000f48   0x00000988   Data   RO            3    PAGES_Constants     pages.o
+
+
+    Execution Region ER_RW (Exec base: 0x1fffe000, Load base: 0x000018d0, Size: 0x00000964, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fffe000   0x000018d0   0x00000100   Data   RW           13    .ARM.__at_0x1FFFE000  start.o
+    0x1fffe100   0x000019d0   0x00000864   Data   RW            4    PAGES_Variables     pages.o
+
+
+    Execution Region ER_ZI (Exec base: 0x1fffe964, Load base: 0x00002234, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       408        224          0          0          0        584   hardfault_lcd.o
+      2872        500       2632       2148          0       2408   pages.o
+       268         58         64        256          0        840   start.o
+
+    ----------------------------------------------------------------------
+      3656        890       2696       2404          0       3832   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+       108        108          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      3656        890       2696       2404          0       3624   Grand Totals
+      3656        890       2696       2404          0       3624   ELF Image Totals
+      3656        890       2696       2404          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6352 (   6.20kB)
+    Total RW  Size (RW Data + ZI Data)              2404 (   2.35kB)
+    Total ROM Size (Code + RO Data + RW Data)       8756 (   8.55kB)
+
+==============================================================================
+

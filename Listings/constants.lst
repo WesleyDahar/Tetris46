@@ -1,0 +1,15 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
+work --depend=.\objects\constants.d -o.\objects\constants.o -I.\RTE\_Target_1 -
+IS:\MDK524a\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include -IS:\MDK524a\A
+RM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SET
+A 524" --predefine="MKL46Z256xxx4 SETA 1" --list=.\listings\constants.lst Const
+ants.s
+333 symbols in table
